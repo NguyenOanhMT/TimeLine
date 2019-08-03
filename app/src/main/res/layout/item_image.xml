@@ -32,9 +32,9 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imv_avatar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp8"
         android:src="@drawable/jacob_pic"
         app:layout_constraintEnd_toStartOf="@+id/guidelineTop"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
@@ -44,7 +44,7 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User name"
+        android:text="@string/user_name"
         style="@style/TextStyle10"
         app:layout_constraintBottom_toBottomOf="@+id/imv_avatar"
         app:layout_constraintStart_toStartOf="@+id/guidelineTop"
@@ -55,34 +55,34 @@
         style="@style/TextStyle11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="@dimen/dp27"
         app:layout_constraintBottom_toBottomOf="@+id/tv_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_name"
-        tools:text="2m ago" />
+        tools:text="@string/time" />
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@+id/guidelineTop"
         app:layout_constraintTop_toBottomOf="@+id/imv_avatar"
-        app:srcCompat="@drawable/anh4" />
+        app:srcCompat="@drawable/anh4"
+        android:contentDescription="@string/image_upload" />
 
     <TextView
         android:id="@+id/tv_number_heart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/dp10"
         android:drawableStart="@drawable/ic_heart"
         android:drawablePadding="@dimen/dp10"
         android:gravity="center"
-        android:text="199"
-        android:textColor="#515966"
-        android:textSize="@dimen/sp17"
+        android:text="@string/_199"
+        style="@style/TextStyle"
         app:layout_constraintStart_toStartOf="@+id/guidelineTop"
         app:layout_constraintTop_toBottomOf="@+id/image_view" />
 
@@ -90,24 +90,23 @@
         android:id="@+id/tv_number_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="@dimen/dp10"
         android:drawableStart="@drawable/ic_rounded_rectangle_2"
         android:drawablePadding="@dimen/dp10"
         android:gravity="center"
-        android:text="100"
-        android:textColor="#515966"
-        android:textSize="@dimen/sp17"
+        android:text="@string/_100"
+        style="@style/TextStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tv_number_heart"
         app:layout_constraintStart_toEndOf="@+id/tv_number_heart"
         app:layout_constraintTop_toTopOf="@+id/tv_number_heart" />
 
     <View
         android:id="@+id/view_line"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:background="#676767"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@color/colorBrownish_grey"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@+id/tv_number_message" />
@@ -116,17 +115,18 @@
         android:id="@+id/image_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginEnd="@dimen/dp5"
         app:layout_constraintEnd_toEndOf="@+id/image_view"
         app:layout_constraintTop_toTopOf="@+id/image_view"
-        app:srcCompat="@drawable/ic_combined_shape_10540" />
+        app:srcCompat="@drawable/ic_combined_shape_10540"
+        android:contentDescription="@string/icon_image" />
 
     <View
         android:id="@+id/time_line_end"
-        android:layout_width="2dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginTop="@dimen/dp40"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/view_line"
         app:layout_constraintEnd_toStartOf="@+id/guidelineStart"
@@ -134,8 +134,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imv_time_line"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
         android:src="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/imv_avatar"
         app:layout_constraintEnd_toEndOf="@+id/time_line_end"
@@ -144,14 +144,13 @@
 
     <View
         android:id="@+id/line_top"
-        android:layout_width="2dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="@dimen/dp2"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp4"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/imv_time_line"
         app:layout_constraintEnd_toEndOf="@+id/imv_time_line"
         app:layout_constraintStart_toStartOf="@+id/imv_time_line" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
