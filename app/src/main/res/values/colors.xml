@@ -7,4 +7,9 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBrownish_grey">#676767</color>
     <color name="colorSlate_grey">#515966</color>
+
+    <color name="yellow">#ffba00</color>
+    <color name="blue">#157ccc</color>
+    <color name="blue_green">#72c200</color>
+    <color name="pink">#ff4b4b</color>
 </resources>

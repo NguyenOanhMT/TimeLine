@@ -1,11 +1,8 @@
 package com.nguyenoanh.timeline;
 
-
+import java.util.ArrayList;
 
 public class Item {
-
-
-
     public enum ItemType {
         ONE_ITEM, TWO_ITEM, THREE_ITEM;
     }
@@ -21,32 +18,39 @@ public class Item {
 
     private ItemType itemType;
 
-    public Item(String name, String time, String numberHeart, String numberMess,int avatar, int imageView, ItemType itemType) {
+    private ItemLine itemLines;
+
+    public Item(String name, String time, String numberHeart,
+                String numberMess,int avatar, int imageView, ItemLine itemLines, ItemType itemType) {
         this.name = name;
         this.time = time;
         this.numberHeart = numberHeart;
         this.numberMess = numberMess;
         this.avatar = avatar;
         this.imageView = imageView;
+        this.itemLines = itemLines;
         this.itemType = itemType;
     }
 
-    public Item(String name, String time, String content, String numberHeart, String numberMess, int avatar, ItemType itemType) {
+    public Item(String name, String time, String content, String numberHeart,
+                String numberMess, int avatar, ItemLine itemLines, ItemType itemType) {
         this.name = name;
         this.time = time;
         this.content = content;
         this.numberHeart = numberHeart;
         this.numberMess = numberMess;
         this.avatar = avatar;
+        this.itemLines = itemLines;
         this.itemType = itemType;
     }
 
-    public Item(String name, String time, String content, int avatar, int imageView, ItemType itemType) {
+    public Item(String name, String time, String content, int avatar, int imageView, ItemLine itemLines, ItemType itemType) {
         this.name = name;
         this.time = time;
         this.content = content;
         this.avatar = avatar;
         this.imageView = imageView;
+        this.itemLines = itemLines;
         this.itemType = itemType;
     }
 
@@ -115,5 +119,13 @@ public class Item {
 
     public void setItemType(ItemType itemType) {
         this.itemType = itemType;
+    }
+
+    public ItemLine getItemLines() {
+        return itemLines;
+    }
+
+    public void setItemLines(ItemLine itemLines) {
+        this.itemLines = itemLines;
     }
 }

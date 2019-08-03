@@ -122,12 +122,12 @@
         app:srcCompat="@drawable/ic_combined_shape_10540"
         android:contentDescription="@string/icon_image" />
 
-    <View
-        android:id="@+id/time_line_end"
+    <ImageView
+        android:id="@+id/line_bottom"
         android:layout_width="@dimen/dp2"
         android:layout_height="@dimen/dp0"
         android:layout_marginTop="@dimen/dp40"
-        android:background="@color/colorPrimary"
+        android:src="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/view_line"
         app:layout_constraintEnd_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent" />
@@ -138,17 +138,17 @@
         android:layout_height="@dimen/dp15"
         android:src="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/imv_avatar"
-        app:layout_constraintEnd_toEndOf="@+id/time_line_end"
-        app:layout_constraintStart_toStartOf="@+id/time_line_end"
+        app:layout_constraintEnd_toEndOf="@+id/line_bottom"
+        app:layout_constraintStart_toStartOf="@+id/line_bottom"
         app:layout_constraintTop_toTopOf="@+id/imv_avatar" />
 
-    <View
+    <ImageView
         android:id="@+id/line_top"
         android:layout_width="@dimen/dp2"
         android:layout_height="@dimen/dp30"
         android:layout_marginTop="@dimen/dp5"
         android:layout_marginBottom="@dimen/dp4"
-        android:background="@color/colorPrimary"
+        android:src="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/imv_time_line"
         app:layout_constraintEnd_toEndOf="@+id/imv_time_line"
         app:layout_constraintStart_toStartOf="@+id/imv_time_line" />

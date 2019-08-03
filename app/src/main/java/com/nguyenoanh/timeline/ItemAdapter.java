@@ -83,12 +83,18 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         holder.numberHeart.setText(item.getNumberHeart ());
         holder.numberMessage.setText(item.getNumberMess ());
 
+        holder.viewTop.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorTop()));
+        holder.viewBottom.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorBottom ()));
+        holder.viewRound.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorRound ()));
+
         holder.image.setImageDrawable(context.getResources().getDrawable(item.getImageView()));
         holder.imageAvatar.setImageDrawable(context.getResources().getDrawable(item.getAvatar ()));
     }
 
     static class ViewHolderOne extends RecyclerView.ViewHolder {
         public TextView name, time, numberHeart, numberMessage;
+
+        ImageView viewTop, viewBottom, viewRound;
 
         ImageView imageAvatar;
         ImageView image;
@@ -100,6 +106,10 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             numberHeart = (TextView) itemView.findViewById (R.id.tv_number_heart) ;
             numberMessage = (TextView) itemView.findViewById (R.id.tv_number_message);
+
+            viewTop = (ImageView) itemView.findViewById (R.id.line_top) ;
+            viewBottom = (ImageView) itemView.findViewById (R.id.line_bottom) ;
+            viewRound = (ImageView) itemView.findViewById (R.id.imv_time_line) ;
 
             imageAvatar = (ImageView) itemView.findViewById(R.id.imv_avatar);
             image = (ImageView) itemView.findViewById(R.id.image_view);
@@ -117,11 +127,17 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         holder.numberHeart.setText (item.getNumberHeart ());
         holder.numberMessage.setText (item.getNumberMess ());
 
+        holder.viewTop.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorTop()));
+        holder.viewBottom.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorBottom ()));
+        holder.viewRound.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorRound ()));
+
         holder.imageAvatar.setImageDrawable(context.getResources().getDrawable(item.getAvatar ()));
     }
 
     static class ViewHolderTwo extends RecyclerView.ViewHolder {
         public TextView name, time, numberHeart, numberMessage, content;
+
+        ImageView viewTop, viewBottom, viewRound;
 
         ImageView imageAvatar;
 
@@ -133,6 +149,10 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             numberHeart = (TextView) itemView.findViewById (R.id.tv_number_heart) ;
             numberMessage = (TextView) itemView.findViewById (R.id.tv_number_message);
+
+            viewTop = (ImageView) itemView.findViewById (R.id.line_top) ;
+            viewBottom = (ImageView) itemView.findViewById (R.id.line_bottom) ;
+            viewRound = (ImageView) itemView.findViewById (R.id.imv_time_line) ;
 
             imageAvatar = (ImageView) itemView.findViewById(R.id.imv_avatar);
 
@@ -153,6 +173,8 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     static class ViewHolderThree extends RecyclerView.ViewHolder {
         public TextView name, time, content;
 
+        ImageView viewTop, viewBottom, viewRound;
+
         ImageView imageAvatar;
         public ViewHolderThree(View itemView) {
             super(itemView);
@@ -160,8 +182,11 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             time = (TextView) itemView.findViewById(R.id.tv_time);
             content = (TextView) itemView.findViewById(R.id.tv_content);
 
-            imageAvatar = (ImageView) itemView.findViewById(R.id.imv_avatar);
+            viewTop = (ImageView) itemView.findViewById (R.id.line_top) ;
+            viewBottom = (ImageView) itemView.findViewById (R.id.line_bottom) ;
+            viewRound = (ImageView) itemView.findViewById (R.id.imv_time_line) ;
 
+            imageAvatar = (ImageView) itemView.findViewById(R.id.imv_avatar);
         }
     }
 
