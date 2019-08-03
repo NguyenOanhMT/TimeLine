@@ -167,6 +167,10 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         holder.time.setText(item.getTime ());
         holder.content.setText(item.getContent ());
 
+        holder.viewTop.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorTop()));
+        holder.viewBottom.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorBottom ()));
+        holder.viewRound.setImageDrawable(context.getResources().getDrawable(item.getItemLines ().getColorRound ()));
+
         holder.imageAvatar.setImageDrawable(context.getResources().getDrawable(item.getAvatar ()));
     }
 
