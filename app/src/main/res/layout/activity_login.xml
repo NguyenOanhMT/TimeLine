@@ -120,7 +120,7 @@
         android:id="@+id/btn_create"
         android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/rectangle_blue"
         android:lineSpacingExtra="@dimen/sp30"
         android:text="@string/create_account"
