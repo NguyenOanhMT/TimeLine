@@ -157,5 +157,4 @@
         app:layout_constraintEnd_toEndOf="@+id/imv_time_line"
         app:layout_constraintStart_toStartOf="@+id/imv_time_line" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
