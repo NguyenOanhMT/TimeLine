@@ -21,43 +21,39 @@ public class TimeLine extends AppCompatActivity {
 
         ArrayList<Item> arrayList = new ArrayList<> ();
 
-        arrayList.add(new Item (
-                "User name", "2m 15 ago",
-                "188", "200",
+        Item child1 = new Item (
+                getResources ().getString(R.string.user_name),
+                getResources ().getString(R.string.time) ,
+                getResources ().getString(R.string._199),
+                getResources ().getString(R.string._100),
                 R.drawable.johnny_pic , R.drawable.anh,
-                Item.ItemType.ONE_ITEM
-        ));
-        arrayList.add(new Item (
-                "User name", "2m 15 ago","halo halo halo!!!",
-                "188", "200",
+                Item.ItemType.ONE_ITEM);
+        Item child2 = new Item (
+                getResources ().getString(R.string.user_name),
+                getResources ().getString(R.string.time) ,
+                getResources ().getString(R.string.have_connect) ,
+                getResources ().getString(R.string._199),
+                getResources ().getString(R.string._100),
                 R.drawable.johnny_pic ,
-                Item.ItemType.TWO_ITEM
-        ));
-        arrayList.add(new Item (
-                "User name", "2m 15 ago",
-                "Have 4 connect", R.drawable.johnny_pic , R.drawable.jacob_pic,
-                Item.ItemType.THREE_ITEM
-        ));
+                Item.ItemType.TWO_ITEM);
+        Item child3 = new Item (
+                getResources ().getString(R.string.user_name),
+                getResources ().getString(R.string.time) ,
+                getResources ().getString(R.string.have_connect) ,
+                R.drawable.johnny_pic ,R.drawable.jacob_pic,
+                Item.ItemType.THREE_ITEM);
 
-        // data
+        // add data
+        arrayList.add(child1);
+        arrayList.add(child2);
+        arrayList.add(child3);
 
-        arrayList.add(new Item (
-                "User name", "2m 15 ago",
-                "188", "200",
-                R.drawable.jacob_pic , R.drawable.anh2,
-                Item.ItemType.ONE_ITEM
-        ));
-        arrayList.add(new Item (
-                "User name", "2m 15 ago","halo halo halo!!!",
-                "188", "200",
-                R.drawable.jacob_pic ,
-                Item.ItemType.TWO_ITEM
-        ));
-        arrayList.add(new Item (
-                "User name", "2m 15 ago",
-                "Have 4 connect", R.drawable.jacob_pic , R.drawable.jacob_pic,
-                Item.ItemType.THREE_ITEM
-        ));
+        arrayList.add(child1);
+        arrayList.add(child2);
+        arrayList.add(child3);
+
+        arrayList.add(child1);
+        arrayList.add(child2);
 
         adapter = new ItemAdapter (arrayList,this);
 
