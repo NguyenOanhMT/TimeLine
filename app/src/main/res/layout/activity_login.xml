@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Login">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <ImageView
+        android:id="@+id/tv_content"
+        android:layout_width="120dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintDimensionRatio="w,176:244"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_shape"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/dp10"
+        android:hint="@string/email"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:autoSizeMinTextSize="@dimen/sp17"
+        android:autoSizeMaxTextSize="@dimen/sp35"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"/>
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/rectangle_shape"
+        android:paddingStart="@dimen/dp10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:autoSizeMinTextSize="@dimen/sp17"
+        android:autoSizeMaxTextSize="@dimen/sp35"
+        android:autoSizeTextType="uniform"
+        android:textSize="@dimen/sp17"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/rectangle_white"
+        android:lineSpacingExtra="@dimen/sp30"
+        android:text="@string/login"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp17"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pass" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:text="@string/or"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp17"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <View
+        android:id="@+id/tv_line1"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+        app:layout_constraintEnd_toStartOf="@+id/tv_or"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+    <View
+        android:id="@+id/tv_line2"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp10"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_or"
+        app:layout_constraintTop_toTopOf="@+id/tv_or" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp35"
+        android:background="@drawable/rectangle_blue"
+        android:lineSpacingExtra="@dimen/sp30"
+        android:text="@string/create_account"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp17"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_or" />
+</androidx.constraintlayout.widget.ConstraintLayout>

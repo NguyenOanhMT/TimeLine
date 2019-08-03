@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimeLine</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="logo">logo</string>
+    <string name="password">Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="login">LOGIN</string>
+</resources>

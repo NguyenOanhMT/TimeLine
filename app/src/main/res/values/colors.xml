@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+
+    <color name="silver">#c7c7cd</color>
+    <color name="purpley_grey">#8f8e94</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="white_two">#fafafa</color>
+    <color name="black">#000000</color>
+    <color name="pale_grey_two">#efeff4</color>
+    <color name="black_two">#030303</color>
+    <color name="dodger_blue">#4980f9</color>
+    <color name="white">#ffffff</color>
+    <color name="pale_grey">#f6f7f9</color>
+    <color name="dark_grey_blue">#253858</color>
+    <color name="white_three">#dcdcdc</color>
+    <color name="white_four">#f9f9f9</color>
+    <color name="greyish">#b6b6b6</color>
+    <color name="charcoal">#232524</color>
+    <color name="charcoal_grey">#373d4a</color>
+    <color name="warm_grey">#979797</color>
+    <color name="brown_grey">#9d8c70</color>
+    <color name="white_five">#e2e2e2</color>
+    <color name="tomato">#eb4c38</color>
+    <color name="dark">#0e1323</color>
+    <color name="very_light_pink">#fff8f0</color>
+    <color name="pinkish_grey">#cfcfcf</color>
+    <color name="light_sage">#b8e986</color>
+    <color name="water_blue">#157ccc</color>
+    <color name="baby_blue">#b2ceff</color>
+    <color name="sunflower_yellow">#ffd800</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="black_0">#00000000</color>
+    <color name="bluey_grey_0">#009fadc4</color>
+    <color name="bright_lavender">#c263ff</color>
+    <color name="brownish_grey">#676767</color>
+    <color name="slate_grey">#515966</color>
+</resources>
