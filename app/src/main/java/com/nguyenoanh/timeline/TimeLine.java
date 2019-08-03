@@ -10,9 +10,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class TimeLine extends AppCompatActivity {
-    LinearLayoutManager layoutManager;
 
-    RecyclerView recyclerView;
     ItemAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

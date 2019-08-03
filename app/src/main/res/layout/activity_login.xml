@@ -11,22 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96" />
+        app:layout_constraintGuide_percent="0.921" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04" />
+        app:layout_constraintGuide_percent="0.079" />
 
     <ImageView
         android:id="@+id/tv_content"
-        android:layout_width="120dp"
-        android:layout_height="153dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/logo"
-        app:layout_constraintDimensionRatio="w,176:244"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,7 +35,7 @@
         android:id="@+id/edt_email"
         android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/rectangle_shape"
         android:inputType="textEmailAddress"
         android:paddingStart="@dimen/dp10"
@@ -54,7 +53,7 @@
         android:id="@+id/edt_pass"
         android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp15"
         android:background="@drawable/rectangle_shape"
         android:paddingStart="@dimen/dp10"
         android:inputType="textPassword"
@@ -73,7 +72,7 @@
         android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp15"
         android:background="@drawable/rectangle_white"
         android:lineSpacingExtra="@dimen/sp30"
         android:text="@string/login"
@@ -121,7 +120,7 @@
         android:id="@+id/btn_create"
         android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp35"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rectangle_blue"
         android:lineSpacingExtra="@dimen/sp30"
         android:text="@string/create_account"
