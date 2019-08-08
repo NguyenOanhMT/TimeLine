@@ -70,20 +70,29 @@
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@+id/guidelineTop"
         app:layout_constraintTop_toBottomOf="@+id/imv_avatar"
-        app:srcCompat="@drawable/anh4"
+        app:srcCompat="@drawable/anh5"
         android:contentDescription="@string/image_upload" />
+
+    <CheckBox
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/ic_like"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_number_heart"
+        app:layout_constraintStart_toStartOf="@+id/guidelineTop"
+        app:layout_constraintTop_toTopOf="@+id/tv_number_heart" />
 
     <TextView
         android:id="@+id/tv_number_heart"
+        style="@style/TextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp10"
-        android:drawableStart="@drawable/ic_heart"
-        android:drawablePadding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
         android:gravity="center"
         android:text="@string/_199"
-        style="@style/TextStyle"
-        app:layout_constraintStart_toStartOf="@+id/guidelineTop"
+        app:layout_constraintStart_toEndOf="@+id/btn_like"
         app:layout_constraintTop_toBottomOf="@+id/image_view" />
 
     <TextView

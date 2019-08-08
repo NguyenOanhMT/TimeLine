@@ -64,7 +64,7 @@ public class TimeLine extends AppCompatActivity {
                 getResources ().getString(R.string.time) ,
                 getResources ().getString(R.string._199),
                 getResources ().getString(R.string._100),
-                R.drawable.johnny_pic , R.drawable.anh2,
+                R.drawable.johnny_pic , R.drawable.anh5,
                 line4,
                 Item.ItemType.ONE_ITEM);
 
